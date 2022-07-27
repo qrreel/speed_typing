@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: beige;
+}
+
+.timer {
+    padding: 2em;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.main-container {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.quote-display, .quote-input {
+    width: 100%;
+}
+
+.quote-display {
+    padding: 0.5rem calc(4px + 1rem)
+}
+
+fieldset {
+    border: 4px double rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+}
+
+legend {
+    font-size: .7rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.quote-input {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    min-height: 10rem;
+    resize: none;
+}
+
+.quote-input:focus::placeholder {
+    color: transparent;
+}
+
+.correct {
+    color: darkgreen;
+}
+
+.incorrect {
+    color: red;
+}
